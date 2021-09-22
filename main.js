@@ -13,18 +13,13 @@ const command = inputArr[0];
 const Utility = require("./utility");
 
 // console.log(typeof Utility.types);
-
-if (command === "tree") {
-  treeFn(inputArr[1]);
-} else if (command === "organize") {
+if (command === "organize") {
   organizeFn(inputArr[1]);
 } else if (command === "help") {
   helpFn();
 } else {
   console.log("Please 🙏🙏 input a valid command");
 }
-
-function treeFn(dirPath) {}
 
 function organizeFn(dirPath) {
   if (dirPath == undefined) {
@@ -84,7 +79,6 @@ function organizeFn(dirPath) {
 function helpFn() {
   console.log(`
 List of All the commands:
-     node main.js tree "directoryPath"
      node main.js organize "directoryPath"
      node main.js help
   `);
